@@ -1,0 +1,150 @@
+body {
+  margin: 0px;
+  padding: 0px;
+}
+
+.TacticsGame {
+  font-family: Arial, Helvetica, Sans-Serif;
+}
+.TacticsGame .Information {
+  float: left;
+  padding: 5px;
+  border-right: 1px dotted #AAA;
+  margin-left: 10px;
+  width: 200px;
+}
+.TacticsGame .Selection {
+  float: left;
+  width: 200px;
+  padding: 5px;
+  border-right: 1px dotted #AAA;
+  margin-left: 10px;
+}
+.TacticsGame .Selection .UnitInfo .status {
+  font-size: 13px;
+}
+.TacticsGame .Moves {
+  float: left;
+  width: 200px;
+  padding: 5px;
+  border-right: 1px dotted #AAA;
+  margin-left: 10px;
+}
+.TacticsGame .Moves .options a {
+  font-size: 13px;
+  margin-right: 5px;
+  border: 1px solid #666;
+  padding: 0px 3px;
+  color: #666;
+  text-decoration: none;
+  -webkit-border-radius: 3px;
+}
+.TacticsGame .Moves .options a:hover {
+  background: #DDD;
+  color: #000;
+  border-color: #000;
+}
+.TacticsGame .Moves .TacticsTurn {
+  margin-top: 10px;
+}
+.TacticsGame .Moves .TacticsTurn .status {
+  font-size: 13px;
+  margin-bottom: 2px;
+}
+.TacticsGame .Information h1,
+.TacticsGame .Selection h1,
+.TacticsGame .Moves h1 {
+  margin: 0px;
+  padding: 0px;
+  font-size: 20px;
+  font-weight: normal;
+  margin-bottom: 5px;
+  color: #2395CF;
+}
+.TacticsBoard {
+  margin: 0px;
+  width: 440px;
+  height: 440px;
+  float: left;
+}
+.TacticsBoard .optionTurn .right,
+.TacticsBoard .optionTurn .left,
+.TacticsBoard .optionTurn .up,
+.TacticsBoard .optionTurn .down {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  z-index: 30;
+  border: 1px solid #666;
+  -webkit-border-radius: 3px;
+}
+.TacticsBoard .optionTurn .right {
+  background: #DDD url(../images/icons/arrow_right.png) center center no-repeat;
+}
+.TacticsBoard .optionTurn .left {
+  background: #DDD url(../images/icons/arrow_left.png) center center no-repeat;
+}
+.TacticsBoard .optionTurn .up {
+  background: #DDD url(../images/icons/arrow_up.png) center center no-repeat;
+}
+.TacticsBoard .optionTurn .down {
+  background: #DDD url(../images/icons/arrow_down.png) center center no-repeat;
+}
+.TacticsBoardTile {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+}
+.TacticsBoardTile:hover {
+  background: #CCC !important;
+}
+.TacticsBoardTile.invalid {
+  background: #DDD;
+}
+.TacticsBoardTile.valid {
+  background: #BBB;
+}
+.TacticsBoardTile.valid.optionMove {
+  background: #94C7E0;
+}
+.TacticsBoardTile.valid.optionMove:hover {
+  background: #2395CF !important;
+}
+.TacticsBoardTile.valid.optionAttack {
+  background: rgb(225, 177, 92);
+}
+.TacticsBoardTile.valid.optionAttack:hover {
+  background: rgb(186, 65, 72) !important;
+}
+.TacticsPlayer {
+  margin-bottom: 10px;
+}
+.TacticsPlayer .stats {
+  font-size: 13px;
+}
+.TacticsUnit {
+  width: 40px;
+  height: 40px;
+  margin: 0px;
+  background: url(../images/units/knight-front.jpg) top left no-repeat;
+  font-size: 16px;
+  -webkit-border-radius: 8px;
+}
+.TacticsUnit .direction {
+  width: 40px;
+  height: 40px;
+}
+.TacticsUnit .direction.right {
+  background: url(../images/icons/arrow_right.png) center center no-repeat;
+}
+.TacticsUnit .direction.left {
+  background: url(../images/icons/arrow_left.png) center center no-repeat;
+}
+.TacticsUnit .direction.up {
+  background: url(../images/icons/arrow_up.png) center center no-repeat;
+}
+.TacticsUnit .direction.down {
+  background: url(../images/icons/arrow_down.png) center center no-repeat;
+}
+
+.break { clear: both; }
