@@ -47,6 +47,9 @@ body {
 .TacticsGame .Moves .TacticsTurn {
   margin-top: 10px;
 }
+.TacticsGame .Moves .TacticsTurn .title {
+  font-size: 16px;	
+}
 .TacticsGame .Moves .TacticsTurn .status {
   font-size: 13px;
   margin-bottom: 2px;
@@ -118,6 +121,9 @@ body {
 }
 .TacticsPlayer {
   margin-bottom: 10px;
+}
+.TacticsPlayer .username {
+  font-size: 16px;
 }
 .TacticsPlayer .stats {
   font-size: 13px;

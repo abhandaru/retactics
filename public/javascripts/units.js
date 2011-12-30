@@ -218,11 +218,13 @@ function KnightUnit(game, row, col) {
     this.tile.unit = this;
   }
   this.doMove = function(row, col) {
+	var unitPos = { row: this.row, col: this.col };
 	var turn = this.game.currentTurn;
 	this.game.deselectUnit();
 	this.setTile(row, col);
 	/* update turn object */
 	turn.unit = this;
+	turn.unitPos = unitPos;
 	turn.hasMoved = {row: row, col: col};
 	/* move to next phase */
 	if(turn.hasAttacked) turn.phase = TURN_DIR;

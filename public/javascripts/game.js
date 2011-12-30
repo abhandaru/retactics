@@ -136,6 +136,7 @@ function TacticsTurn(game, number, player) {
   this.player = player;
   this.phase = TURN_MOVE;
   this.unit = null;
+  this.unitPos = null;
   this.hasMoved = false;
   this.hasAttacked = false;
   this.hasTurned = false;
@@ -155,12 +156,12 @@ function TacticsTurn(game, number, player) {
   this.element = initDOM(this);
 
   /* private methods */
-  var updateStatus = function(turn) {
+  var updateStatusDOM = function(turn) {
     var $status = turn.element.find('.status');
     if(turn.noMoves)
       $status.html('Player made no moves.');
     else {
-	  $status.html(turn.unit.name);
+	  $status.html(turn.unit.name+' ('+turn.unitPos.row+','+turn.unitPos.col+')');
 	  if(turn.hasMoved)
 	    $status.append(' moves to ('+turn.hasMoved.row+','+turn.hasMoved.col+'), ');
 	  if(turn.hasAttacked)
@@ -175,7 +176,7 @@ function TacticsTurn(game, number, player) {
   this.endTurn = function() {
     this.finished = true;
     this.noMoves = (!this.unit) ? true : false;
-    updateStatus(this);
+    updateStatusDOM(this);
     this.game.nextTurn();
   }
   this.switchToMove = function() {

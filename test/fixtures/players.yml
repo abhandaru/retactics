@@ -1,0 +1,17 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  username: MyString
+  wins: 1
+  losses: 1
+  ties: 1
+  rating: 1
+  color: MyString
+
+two:
+  username: MyString
+  wins: 1
+  losses: 1
+  ties: 1
+  rating: 1
+  color: MyString

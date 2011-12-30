@@ -1,0 +1,35 @@
+<h1>Listing turns</h1>
+
+<table>
+  <tr>
+    <th>Game</th>
+    <th>Number</th>
+    <th>Player</th>
+    <th>Moved</th>
+    <th>Attacked</th>
+    <th>Turned</th>
+    <th>Duration</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @turns.each do |turn| %>
+  <tr>
+    <td><%= turn.game_id %></td>
+    <td><%= turn.number %></td>
+    <td><%= turn.player_id %></td>
+    <td><%= turn.moved %></td>
+    <td><%= turn.attacked %></td>
+    <td><%= turn.turned %></td>
+    <td><%= turn.duration %></td>
+    <td><%= link_to 'Show', turn %></td>
+    <td><%= link_to 'Edit', edit_turn_path(turn) %></td>
+    <td><%= link_to 'Destroy', turn, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Turn', new_turn_path %>

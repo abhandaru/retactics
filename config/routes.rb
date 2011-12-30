@@ -1,4 +1,8 @@
 Retactics::Application.routes.draw do
+  resources :players
+
+  resources :turns
+
   resources :games
 
   # The priority is based upon order of creation:

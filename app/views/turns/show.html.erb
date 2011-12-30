@@ -1,0 +1,40 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Game:</b>
+  <%= @turn.game_id %>
+</p>
+
+<p>
+  <b>Number:</b>
+  <%= @turn.number %>
+</p>
+
+<p>
+  <b>Player:</b>
+  <%= @turn.player_id %>
+</p>
+
+<p>
+  <b>Moved:</b>
+  <%= @turn.moved %>
+</p>
+
+<p>
+  <b>Attacked:</b>
+  <%= @turn.attacked %>
+</p>
+
+<p>
+  <b>Turned:</b>
+  <%= @turn.turned %>
+</p>
+
+<p>
+  <b>Duration:</b>
+  <%= @turn.duration %>
+</p>
+
+
+<%= link_to 'Edit', edit_turn_path(@turn) %> |
+<%= link_to 'Back', turns_path %>
