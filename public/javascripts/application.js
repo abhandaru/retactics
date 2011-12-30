@@ -1,13 +1,15 @@
-var game = null;
+//var game = null;
 $(document).ready(function() {
-  var $gameContainer = $('body');
+  var $gameContainer = $('#ReTactics');
 
-  game = new TacticsGame();
-  game.addPlayer(aduPlayer);
-  game.addPlayer(nubPlayer);
-  game.start();
+  if($gameContainer.length) {
+	var game = new TacticsGame();
+    game.addPlayer(aduPlayer);
+    game.addPlayer(nubPlayer);
+    game.start();
 
-  $gameContainer.append(game.element);
-  $gameContainer.append($('<div />').addClass('break'));
-  console.log(game);
+    $gameContainer.append(game.element);
+    $gameContainer.append($('<div />').addClass('break'));
+    console.log(game);
+  }
 });

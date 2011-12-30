@@ -117,7 +117,7 @@ function TacticsGame() {
     this.deselectUnit();
 	/* do new turn */
 	var turnNumber = ++this.turnCount;
-	var currentPlayer = this.players[(turnNumber + this.turnStart) % game.players.length];
+	var currentPlayer = this.players[(turnNumber + this.turnStart) % this.players.length];
     var currentTurn = new TacticsTurn(this, turnNumber, currentPlayer);
     this.currentTurn = currentTurn;
     this.turns.push(currentTurn);

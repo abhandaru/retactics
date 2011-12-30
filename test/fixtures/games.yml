@@ -1,0 +1,13 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  turn_count: 1
+  start_time: 2011-12-31 03:19:48
+  end_time: 2011-12-31 03:19:48
+  winner_id: 1
+
+two:
+  turn_count: 1
+  start_time: 2011-12-31 03:19:48
+  end_time: 2011-12-31 03:19:48
+  winner_id: 1
