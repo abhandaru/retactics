@@ -1,0 +1,17 @@
+<% if current_player %>
+  <div id="profile">
+	<h1><%= current_player.username %></h1>
+	<div>Rating: <%= current_player.rating %></div>
+	<div class="break"></div>
+  </div>
+<% else %>
+  <div id="login">
+	<h1>Username</h1>
+	<input type="text" name="player[username]" />
+	<h1>Password</h1>
+	<input type="password" name="player[password]" />
+	<input type="submit" name="login" value="Login" />
+	<input type="submit" name="register" value="Register" />
+	<div class="break"></div>
+  <div>
+<% end %>

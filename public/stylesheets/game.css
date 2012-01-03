@@ -1,10 +1,6 @@
-body {
-  margin: 0px;
-  padding: 0px;
-}
-
 .TacticsGame {
   font-family: Arial, Helvetica, Sans-Serif;
+  text-align: left;
 }
 .TacticsGame .Information {
   float: left;
@@ -33,9 +29,10 @@ body {
 .TacticsGame .Moves .options a {
   font-size: 13px;
   margin-right: 5px;
-  border: 1px solid #666;
+  border: 1px solid #333;
   padding: 0px 3px;
   color: #666;
+  background: #FFF;
   text-decoration: none;
   -webkit-border-radius: 3px;
 }
@@ -152,5 +149,3 @@ body {
 .TacticsUnit .direction.down {
   background: url(../images/icons/arrow_down.png) center center no-repeat;
 }
-
-.break { clear: both; }

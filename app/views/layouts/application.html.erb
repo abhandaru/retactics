@@ -14,6 +14,19 @@
   <%= csrf_meta_tag %>
 </head>
 <body>
+  <div id="header">
+	<div class="CurrentPlayer">
+	<% if current_player %>
+	  Welcome, <%= link_to current_player.username, :profile %>
+	<% else %>
+	  Welcome, <span class="accent">Guest</span>
+	<% end %>
+	</div>
+	<div class="ReTacticsLogo">
+	  <span class="accent">Re</span>Tactics
+	</div>
+	<div class="break"></div>
+  </div>
 <%= yield %>
 </body>
 </html>

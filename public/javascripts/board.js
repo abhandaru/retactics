@@ -64,8 +64,8 @@ function TacticsBoardTile(game, size, chip, row, col) {
     var $tile = $('<div />')
       .addClass('TacticsBoardTile')
       .addClass((tile.isValid) ? 'valid' : 'invalid')
-      .css('left', BOARD_TILE_SIZE * col)
-      .css('top', BOARD_TILE_SIZE * row)
+      .css('left', BOARD_LEFT + BOARD_TILE_SIZE * col)
+      .css('top', BOARD_TOP + BOARD_TILE_SIZE * row)
       .css('z-index', row + col)
       .attr('title', '('+row+','+col+')')
       .click(function() { clickTileHandler(tile); });

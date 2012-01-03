@@ -1,0 +1,46 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  font-family: Arial, Helvetica, Sans-Serif;
+  background: #AAA url(../images/layout/linen.png);
+  text-align: center;
+}
+#header {
+  background: #DDD;
+  color: #000; 
+  height: 60px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  margin: 0px 100px;
+}
+#header .CurrentPlayer {
+  float: left;
+  padding: 20px;
+  font-size: 16px;
+  color: #333;
+  font-weight: bold;
+}
+#header .CurrentPlayer a {
+  color: #2395CF;
+  text-decoration: none;
+  padding: 2px 5px;
+  border-radius: 3px;
+}
+#header .CurrentPlayer a:hover {
+  color: #FFF;
+  background: #000;
+}
+#header .ReTacticsLogo {
+  float: right;
+  padding: 20px;
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+}
+#header .accent {
+  color: #999;
+}
+
+.break {
+  clear: both;
+}
