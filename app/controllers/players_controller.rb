@@ -44,7 +44,7 @@ class PlayersController < ApplicationController
 
     respond_to do |format|
       if @player.save
-        format.html { redirect_to(@player, :notice => 'Player was successfully created.') }
+        format.html { redirect_to(@player, :notice => 'Registration successful!') }
         format.xml  { render :xml => @player, :status => :created, :location => @player }
       else
         format.html { render :action => "new" }
@@ -60,7 +60,7 @@ class PlayersController < ApplicationController
 
     respond_to do |format|
       if @player.update_attributes(params[:player])
-        format.html { redirect_to(@player, :notice => 'Player was successfully updated.') }
+        format.html { redirect_to(@player, :notice => 'Profile changes saved!') }
         format.xml  { head :ok }
       else
         format.html { render :action => "edit" }

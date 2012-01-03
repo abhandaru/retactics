@@ -5,3 +5,8 @@
 #
 #   cities = City.create([{ :name => 'Chicago' }, { :name => 'Copenhagen' }])
 #   Mayor.create(:name => 'Daley', :city => cities.first)
+
+players = Player.create([
+  { :username => 'adu', :wins => 42, :losses => 2, :ties => 1, :rating => 1027, :color => 'blue' },
+  { :username => 'nubber', :wins => 21, :losses => 26, :ties => 2, :rating => 730, :color => 'green' }
+])

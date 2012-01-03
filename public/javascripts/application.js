@@ -1,7 +1,6 @@
-//var game = null;
 $(document).ready(function() {
+	
   var $gameContainer = $('#ReTactics');
-
   if($gameContainer.length) {
 	var game = new TacticsGame();
     game.addPlayer(aduPlayer);

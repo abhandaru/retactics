@@ -1,4 +1,5 @@
 class Game < ActiveRecord::Base
-  has_and_belongs_to_many :players
+  has_many :games_players
+  has_many :players, :through => :games_players
   has_many :turns
 end
