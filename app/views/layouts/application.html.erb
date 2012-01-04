@@ -26,6 +26,16 @@
 	  <span class="accent">Re</span>Tactics
 	</div>
 	<div class="break"></div>
+	<div class="PlayerOptions">
+	  <% if current_player %>
+	    <%= link_to "Logout", :logout %>
+	    <%= link_to "Messages (0)", "/messages" %>
+	  <% else %>
+	    <%= link_to "Login", :login %>
+	    <%= link_to "Register", :register %>	
+	  <% end %>	
+	  <div class="break"></div>
+	</div>
   </div>
 <%= yield %>
 </body>

@@ -18,7 +18,7 @@ class PlayerSessionsController < ApplicationController
 
     respond_to do |format|
       if @player_session.save
-        format.html { redirect_to(:players, :notice => 'Login Successful!') }
+        format.html { redirect_to(:profile, :notice => 'Login Successful!') }
         format.xml  { render :xml => @player_session, :status => :created, :location => @player_session }
       else
         format.html { render :action => "new" }
@@ -34,7 +34,7 @@ class PlayerSessionsController < ApplicationController
     @player_session.destroy
 
     respond_to do |format|
-      format.html { redirect_to(:players, :notice => 'You have been logged out.') }
+      format.html { redirect_to(:root, :notice => 'You have been logged out.') }
       format.xml  { head :ok }
     end
   end

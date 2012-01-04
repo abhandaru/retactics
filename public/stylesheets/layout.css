@@ -5,23 +5,28 @@ body {
   background: #AAA url(../images/layout/linen.png);
   text-align: center;
 }
+a {
+  font-family: Arial, Helvetica, Sans-Serif;	
+}
+table {
+  font-size: 13px;
+}
 #header {
   background: #DDD;
   color: #000; 
-  height: 60px;
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
   margin: 0px 100px;
 }
 #header .CurrentPlayer {
   float: left;
-  padding: 20px;
-  font-size: 16px;
+  padding: 25px 20px;
+  font-size: 18px;
   color: #333;
   font-weight: bold;
 }
 #header .CurrentPlayer a {
-  color: #2395CF;
+  color: rgb(38, 154, 5);
   text-decoration: none;
   padding: 2px 5px;
   border-radius: 3px;
@@ -36,6 +41,26 @@ body {
   font-size: 24px;
   font-weight: bold;
   color: #333;
+}
+#header .PlayerOptions {
+  padding: 0px 20px;
+  background: rgb(113, 186, 88);
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  color: #333;
+  text-align: left;
+}
+#header .PlayerOptions a {
+  color: #333;
+  text-decoration: none;
+  font-size: 13px;
+  display: block;
+  float: left;
+  padding: 10px;
+}
+#header .PlayerOptions a:hover {
+  color: #FFF;
+  background: #000;
 }
 #header .accent {
   color: #999;

@@ -4,12 +4,15 @@ Retactics::Application.routes.draw do
   resources :games
   resources :games_players
   resources :player_sessions
+  
   match 'login' => 'player_sessions#new', :as => :login
   match 'logout' => 'player_sessions#destroy', :as => :logout
+  match 'register' => 'players#new', :as => :register
 
   match 'profile' => 'profile#index', :as => :profile
   match 'arena' => 'arena#index'
   match 'lobby' => 'lobby#index'
+  root :to => 'profile#index'
   
   # The priority is based upon order of creation:
   # first created -> highest priority.

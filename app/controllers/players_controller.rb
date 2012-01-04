@@ -24,8 +24,12 @@ class PlayersController < ApplicationController
   # GET /players/new
   # GET /players/new.xml
   def new
+    if(current_player)
+      redirect_to :profile
+      return
+    end
+    
     @player = Player.new
-
     respond_to do |format|
       format.html # new.html.erb
       format.xml  { render :xml => @player }
@@ -39,9 +43,9 @@ class PlayersController < ApplicationController
 
   # POST /players
   # POST /players.xml
-  def create
+  def create    
     @player = Player.new(params[:player])
-
+    
     respond_to do |format|
       if @player.save
         format.html { redirect_to(@player, :notice => 'Registration successful!') }

@@ -1,0 +1,106 @@
+#profile {
+  margin: 20px 100px 10px 100px;
+  background: #FFF;
+  border-radius: 5px;
+  text-align: left;
+}
+#profile .info {
+  padding: 20px;
+}
+#login {
+  background: #FFF;
+  border-radius: 5px;
+  text-align: left;
+  margin: 100px auto 20px auto;
+  width: 500px;
+}
+#profile .title,
+#login .title,
+#register .title {
+  padding: 20px;
+  color: #333;
+  font-weight: bold;
+  font-size: 20px;
+  background: #DDD;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  overflow: hidden;
+}
+#login .title a,
+#register .title a {
+  color: rgb(38, 154, 5);
+  display: block;
+  text-decoration: none;
+  font-weight: normal;
+  font-size: 16px;
+  padding: 23px 10px;
+  margin: -20px 0px;
+  float: right;
+}
+#login .title a:hover,
+#register .title a:hover {
+  background: #AAA;
+  color: #FFF;
+}
+#login .form,
+#register .form {
+  padding: 20px;
+  font-size: 16px;
+}
+#login .form label,
+#register .form label {
+  display: block;
+}
+#login .form input.text,
+#register .form input.text {
+  padding: 3px;
+  border-radius: 3px;
+  color: #666;
+  border: 1px solid #333;
+  font-size: 16px;
+}
+#login .form input.submit,
+#register .form input.submit {
+  padding: 3px 6px;
+  border-radius: 3px;
+  color: #333;
+  border: 1px solid #333;
+  font-size: 16px;
+}
+#login .form #error_explanation,
+#register .form #error_explanation {
+  border-radius: 5px;
+  border: 1px solid rgb(193, 98, 100);
+  background: rgb(236, 206, 207);
+  margin-bottom: 10px;
+}
+#login .form #error_explanation h2,
+#register .form #error_explanation h2 {
+  background: transparent;
+  color: #000;
+  margin: 0px 0px 0px 0px;
+  padding: 10px 10px 0px 10px;
+  font-size: 16px;
+  font-weight: normal;
+}
+#login .form #error_explanation ul,
+#register .form #error_explanation ul {
+  margin: 5px 0px 10px 30px;
+  padding: 0px;
+  font-size: 13px;
+}
+#login .form .field,
+#register .form .field {
+  margin-bottom: 10px;
+}
+#login .form .field .field_with_errors input,
+#register .form .field .field_with_errors input {
+  border: 2px solid rgb(193, 98, 100);
+}
+#register {
+  background: #FFF;
+  border-radius: 5px;
+  text-align: left;
+  margin: 70px auto;
+  width: 700px;
+}
