@@ -1,6 +1,13 @@
+#arena {
+  margin: 20px 100px 10px 100px;
+  background: #FFF;
+  border-radius: 5px;
+  text-align: left;
+}
 .TacticsGame {
   font-family: Arial, Helvetica, Sans-Serif;
   text-align: left;
+  padding: 20px;
 }
 .TacticsGame .Information {
   float: left;
@@ -62,7 +69,7 @@
   color: #2395CF;
 }
 .TacticsBoard {
-  margin: 0px;
+  margin-bottom: 20px;
   width: 440px;
   height: 440px;
   float: left;
@@ -99,7 +106,7 @@
   background: #CCC !important;
 }
 .TacticsBoardTile.invalid {
-  background: #DDD;
+  background: transparent;
 }
 .TacticsBoardTile.valid {
   background: #BBB;

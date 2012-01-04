@@ -1,0 +1,77 @@
+#lobby {
+  margin: 20px 100px 10px 100px;
+  background: #FFF;
+  border-radius: 5px;
+  text-align: left;
+}
+#lobby .title {
+  padding: 20px;
+  color: #333;
+  font-weight: bold;
+  font-size: 20px;
+  background: #DDD;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  overflow: hidden;
+}
+#lobby .title a {
+  color: rgb(38, 154, 5);
+  display: block;
+  text-decoration: none;
+  font-weight: normal;
+  font-size: 16px;
+  padding: 23px 10px;
+  margin: -20px 0px;
+  float: right;
+}
+#lobby .title a:hover {
+  background: #AAA;
+  color: #FFF;
+}
+#lobby .heading {
+  font-size: 18px;
+  color: #666;
+  padding: 20px 20px 0px 20px;
+}
+#lobby .open-games {
+  padding: 20px;
+}
+#lobby .open-games .LobbyGame .LobbyGameTitle {
+  border-radius: 5px;
+  width: 50px;
+  height: 50px;
+  background: #DDD;
+  text-align: center;
+  font-size: 13px;
+  float: left;
+  border: 1px solid #AAA;
+}
+#lobby .open-games .LobbyGame .LobbyGameTitle .label {
+  margin-top: 8px;
+}
+#lobby .open-games .LobbyGame .LobbyGameTitle .number {
+  font-weight: bold;
+  font-size: 20px;
+}
+#lobby .open-games .LobbyGame .LobbyGamePlayers {
+  float: left;
+}
+#lobby .open-games .LobbyGame .LobbyGamePlayers .LobbyGamePlayer {
+  float: left;
+  height: 50px;
+  width: 150px;
+  margin-left: 10px;
+  background: #DDD url(../images/units/knight-front.jpg) left top no-repeat;
+  border-radius: 5px;
+  border: 1px solid #AAA;
+}
+#lobby .open-games .LobbyGame .LobbyGamePlayers .LobbyGamePlayer .username {
+  margin-left: 60px;
+  padding: 8px 0px 2px 0px;
+  font-size: 13px;
+}
+#lobby .open-games .LobbyGame .LobbyGamePlayers .LobbyGamePlayer .rating {
+  margin-left: 60px;
+  padding: 2px 0px 8px 0px;
+  font-size: 13px;
+}

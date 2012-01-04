@@ -140,8 +140,8 @@ function KnightUnit(game, row, col) {
   }
   var showTurns = function(unit) {
 	var $unit = unit.element;
-    var unitX = unit.col * BOARD_TILE_SIZE;
-    var unitY = unit.row * BOARD_TILE_SIZE;	
+    var unitX = BOARD_LEFT + unit.col * BOARD_TILE_SIZE;
+    var unitY = BOARD_TOP + unit.row * BOARD_TILE_SIZE;	
     var $rightArr = $('<div />').addClass(DIR_RIGHT)
       .css('left', unitX+35).css('top', unitY+10).attr('data', DIR_RIGHT);
     var $leftArr = $('<div />').addClass(DIR_LEFT)

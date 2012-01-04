@@ -25,8 +25,8 @@ var UNIT_GREEN = 'green';
 var UNIT_ORANGE = 'orange';
 
 /* board formatting */
-var BOARD_TOP = 80;
-var BOARD_LEFT = 0;
+var BOARD_TOP = 145;
+var BOARD_LEFT = 120;
 var BOARD_TILE_SIZE = 40;
 
 /* test data */

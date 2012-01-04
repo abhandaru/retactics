@@ -18,31 +18,31 @@ table {
   border-bottom-right-radius: 5px;
   margin: 0px 100px;
 }
-#header .CurrentPlayer {
+#header .current-player {
   float: left;
   padding: 25px 20px;
   font-size: 18px;
   color: #333;
   font-weight: bold;
 }
-#header .CurrentPlayer a {
+#header .current-player a {
   color: rgb(38, 154, 5);
   text-decoration: none;
   padding: 2px 5px;
   border-radius: 3px;
 }
-#header .CurrentPlayer a:hover {
+#header .current-player a:hover {
   color: #FFF;
   background: #000;
 }
-#header .ReTacticsLogo {
+#header .retactics-logo {
   float: right;
   padding: 20px;
   font-size: 24px;
   font-weight: bold;
   color: #333;
 }
-#header .PlayerOptions {
+#header .player-options {
   padding: 0px 20px;
   background: rgb(113, 186, 88);
   border-bottom-left-radius: 5px;
@@ -50,15 +50,16 @@ table {
   color: #333;
   text-align: left;
 }
-#header .PlayerOptions a {
+#header .player-options a {
   color: #333;
   text-decoration: none;
   font-size: 13px;
   display: block;
   float: left;
   padding: 10px;
+  margin-right: 5px;
 }
-#header .PlayerOptions a:hover {
+#header .player-options a:hover {
   color: #FFF;
   background: #000;
 }

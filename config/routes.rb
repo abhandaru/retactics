@@ -11,7 +11,10 @@ Retactics::Application.routes.draw do
 
   match 'profile' => 'profile#index', :as => :profile
   match 'arena' => 'arena#index'
-  match 'lobby' => 'lobby#index'
+  match 'lobby' => 'lobby#index', :as => :lobby
+  
+  match 'lobby/updates/:time.json' => 'lobby#updates'
+  
   root :to => 'profile#index'
   
   # The priority is based upon order of creation:

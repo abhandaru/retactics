@@ -10,26 +10,27 @@
   <%= javascript_include_tag 'board.js' %>
   <%= javascript_include_tag 'player.js' %>
   <%= javascript_include_tag 'game.js' %>
-  <%= javascript_include_tag 'application.js' %>
+  <%= javascript_include_tag 'lobby.js' %>
   <%= csrf_meta_tag %>
 </head>
 <body>
   <div id="header">
-	<div class="CurrentPlayer">
+	<div class="current-player">
 	<% if current_player %>
 	  Welcome, <%= link_to current_player.username, :profile %>
 	<% else %>
 	  Welcome, <span class="accent">Guest</span>
 	<% end %>
 	</div>
-	<div class="ReTacticsLogo">
+	<div class="retactics-logo">
 	  <span class="accent">Re</span>Tactics
 	</div>
 	<div class="break"></div>
-	<div class="PlayerOptions">
+	<div class="player-options">
 	  <% if current_player %>
+		<%= link_to "Profile", :profile %>
+		<%= link_to "Lobby", :lobby %>
 	    <%= link_to "Logout", :logout %>
-	    <%= link_to "Messages (0)", "/messages" %>
 	  <% else %>
 	    <%= link_to "Login", :login %>
 	    <%= link_to "Register", :register %>	
