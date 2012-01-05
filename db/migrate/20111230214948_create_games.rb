@@ -6,7 +6,6 @@ class CreateGames < ActiveRecord::Migration
       t.datetime :end_time
       t.boolean :finished
       t.integer :winner_id
-      t.integer :turn_count
 
       t.timestamps
     end

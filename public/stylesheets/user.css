@@ -26,6 +26,7 @@
   border-top-right-radius: 5px;
   overflow: hidden;
 }
+#profile .title a,
 #login .title a,
 #register .title a {
   color: rgb(38, 154, 5);
@@ -37,6 +38,7 @@
   margin: -20px 0px;
   float: right;
 }
+#profile .title a:hover,
 #login .title a:hover,
 #register .title a:hover {
   background: #AAA;

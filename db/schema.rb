@@ -13,9 +13,10 @@
 ActiveRecord::Schema.define(:version => 20120103103406) do
 
   create_table "games", :force => true do |t|
-    t.integer  "turn_count"
+    t.integer  "capacity"
     t.datetime "start_time"
     t.datetime "end_time"
+    t.boolean  "finished"
     t.integer  "winner_id"
     t.datetime "created_at"
     t.datetime "updated_at"

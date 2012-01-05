@@ -1,40 +1,38 @@
+  <div id="profile">
+	<div class="title">
+	  <%= @player.username %>
+	  <%= link_to 'Edit', edit_player_path(@player) %>
+	  <%= link_to 'Back', players_path %>
+	</div>
+	<div class="info">
 <p id="notice"><%= notice %></p>
-
 <p>
   <b>Username:</b>
   <%= @player.username %>
 </p>
-
 <p>
   <b>Email:</b>
   <%= @player.email %>
 </p>
-
 <p>
   <b>Wins:</b>
   <%= @player.wins %>
 </p>
-
 <p>
   <b>Losses:</b>
   <%= @player.losses %>
 </p>
-
 <p>
   <b>Ties:</b>
   <%= @player.ties %>
 </p>
-
 <p>
   <b>Rating:</b>
   <%= @player.rating %>
 </p>
-
 <p>
   <b>Color:</b>
   <%= @player.color %>
 </p>
-
-
-<%= link_to 'Edit', edit_player_path(@player) %> |
-<%= link_to 'Back', players_path %>
+    </div>
+  </div>

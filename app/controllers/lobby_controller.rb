@@ -6,9 +6,9 @@ class LobbyController < ApplicationController
   
   def updates
     updates = { }
-    updates[:open_games] = Game.where(:winner_id => nil)
+    updates[:open_games] = Game.where(:finished => false)
     render :json => updates.to_json(:include => {
-      :players => { :only => [:username, :rating, :wins, :losses, :ties] }
+      :players => { :only => [:id, :username, :rating, :wins, :losses, :ties] }
     })
   end
   

@@ -36,27 +36,27 @@
 #lobby .open-games {
   padding: 20px;
 }
-#lobby .open-games .LobbyGame .LobbyGameTitle {
+.LobbyGame .LobbyGameTitle {
   border-radius: 5px;
   width: 50px;
   height: 50px;
-  background: #DDD;
+  background: #CCC;
   text-align: center;
   font-size: 13px;
   float: left;
   border: 1px solid #AAA;
 }
-#lobby .open-games .LobbyGame .LobbyGameTitle .label {
+.LobbyGame .LobbyGameTitle .label {
   margin-top: 8px;
 }
-#lobby .open-games .LobbyGame .LobbyGameTitle .number {
+.LobbyGame .LobbyGameTitle .number {
   font-weight: bold;
   font-size: 20px;
 }
-#lobby .open-games .LobbyGame .LobbyGamePlayers {
+.LobbyGame .LobbyGamePlayers {
   float: left;
 }
-#lobby .open-games .LobbyGame .LobbyGamePlayers .LobbyGamePlayer {
+.LobbyGame .LobbyGamePlayers .LobbyGamePlayer {
   float: left;
   height: 50px;
   width: 150px;
@@ -65,13 +65,40 @@
   border-radius: 5px;
   border: 1px solid #AAA;
 }
-#lobby .open-games .LobbyGame .LobbyGamePlayers .LobbyGamePlayer .username {
-  margin-left: 60px;
-  padding: 8px 0px 2px 0px;
+.LobbyGame .LobbyGamePlayers .LobbyGamePlayer .username {
+  margin-left: 50px;
+  padding: 8px 0px 2px 10px;
   font-size: 13px;
 }
-#lobby .open-games .LobbyGame .LobbyGamePlayers .LobbyGamePlayer .rating {
-  margin-left: 60px;
-  padding: 2px 0px 8px 0px;
+.LobbyGame .LobbyGamePlayers .LobbyGamePlayer .username a {
+  text-decoration: none;
+  color: rgb(38, 154, 5);
+  font-weight: bold;
+}
+.LobbyGame .LobbyGamePlayers .LobbyGamePlayer .rating {
+  margin-left: 50px;
+  padding: 2px 0px 8px 10px;
   font-size: 13px;
+}
+.LobbyGame .LobbyGameJoin {
+  float: left;
+  height: 50px;
+  width: 50px;
+  margin-left: 10px;
+  border-radius: 5px;
+  border: 1px solid #AAA;
+  overflow: hidden;
+}
+.LobbyGame .LobbyGameJoin a {
+  text-decoration: none;
+  color: #666;
+  font-size: 50px;
+  display: block;
+  padding: 0px 0px 0px 10px;
+  margin-top: -2px;
+  background: #DDD;
+  border-radius: 5px;
+}
+.LobbyGame .LobbyGameJoin a:hover {
+  background: #CCC;
 }
