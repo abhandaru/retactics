@@ -5,8 +5,16 @@
 #
 #   cities = City.create([{ :name => 'Chicago' }, { :name => 'Copenhagen' }])
 #   Mayor.create(:name => 'Daley', :city => cities.first)
-
-players = Player.create([
-  { :username => 'adu', :wins => 42, :losses => 2, :ties => 1, :rating => 1027, :color => 'blue' },
-  { :username => 'nubber', :wins => 21, :losses => 26, :ties => 2, :rating => 730, :color => 'green' }
+units = Unit.create([
+  { :name => "Knight" }
 ])
+
+formations = Formation.create([
+  { :player_id => 1, :public => true, :notes => "my first formation" },
+  { :player_id => 2, :public => true, :notes => "my second formation" }  
+])
+
+unit_locations = UnitLocation.create([
+  { :formation_id => 1, :unit_id => 1, :row => 2, :col => 6 },
+  { :formation_id => 2, :unit_id => 1, :row => 3, :col => 7 } 
+]);

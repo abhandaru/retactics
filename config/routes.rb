@@ -1,4 +1,8 @@
 Retactics::Application.routes.draw do
+  resources :units
+  resources :unit_locations
+  resources :formations
+
   resources :players
   resources :turns
   resources :games

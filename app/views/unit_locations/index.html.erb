@@ -1,0 +1,29 @@
+<h1>Listing unit_locations</h1>
+
+<table>
+  <tr>
+    <th>Formation</th>
+    <th>Unit</th>
+    <th>Row</th>
+    <th>Col</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @unit_locations.each do |unit_location| %>
+  <tr>
+    <td><%= unit_location.formation_id %></td>
+    <td><%= unit_location.unit_id %></td>
+    <td><%= unit_location.row %></td>
+    <td><%= unit_location.col %></td>
+    <td><%= link_to 'Show', unit_location %></td>
+    <td><%= link_to 'Edit', edit_unit_location_path(unit_location) %></td>
+    <td><%= link_to 'Destroy', unit_location, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Unit location', new_unit_location_path %>

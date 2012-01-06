@@ -1,0 +1,2 @@
+module UnitLocationsHelper
+end

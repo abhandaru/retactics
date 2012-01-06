@@ -10,7 +10,15 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120103103406) do
+ActiveRecord::Schema.define(:version => 20120105005023) do
+
+  create_table "formations", :force => true do |t|
+    t.integer  "player_id"
+    t.boolean  "public"
+    t.text     "notes"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "games", :force => true do |t|
     t.integer  "capacity"
@@ -57,6 +65,21 @@ ActiveRecord::Schema.define(:version => 20120103103406) do
     t.boolean  "attacked"
     t.boolean  "turned"
     t.integer  "duration"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "unit_locations", :force => true do |t|
+    t.integer  "formation_id"
+    t.integer  "unit_id"
+    t.integer  "row"
+    t.integer  "col"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "units", :force => true do |t|
+    t.string   "name"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

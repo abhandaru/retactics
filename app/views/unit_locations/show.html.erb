@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Formation:</b>
+  <%= @unit_location.formation_id %>
+</p>
+
+<p>
+  <b>Unit:</b>
+  <%= @unit_location.unit_id %>
+</p>
+
+<p>
+  <b>Row:</b>
+  <%= @unit_location.row %>
+</p>
+
+<p>
+  <b>Col:</b>
+  <%= @unit_location.col %>
+</p>
+
+
+<%= link_to 'Edit', edit_unit_location_path(@unit_location) %> |
+<%= link_to 'Back', unit_locations_path %>

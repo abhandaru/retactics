@@ -1,0 +1,15 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Public:</b>
+  <%= @formation.public %>
+</p>
+
+<p>
+  <b>Notes:</b>
+  <%= @formation.notes %>
+</p>
+
+
+<%= link_to 'Edit', edit_formation_path(@formation) %> |
+<%= link_to 'Back', formations_path %>
