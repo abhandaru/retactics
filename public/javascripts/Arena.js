@@ -1,7 +1,10 @@
+
+var game = null;
+
 function initArena() {
   var $gameContainer = $('#arena');
   if($gameContainer.length) {
-	var game = new TacticsGame();
+	game = new TacticsGame();
     game.addPlayer(aduPlayer);
     game.addPlayer(nubPlayer);
     game.start();
