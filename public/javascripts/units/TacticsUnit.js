@@ -1,49 +1,15 @@
-function Formation(game, unitList) {
-  this.units = null;
-  
-  /* init methods */
-  var initUnits = function() {
-	var units = new Array();
-    $.each(unitList, function(i, unitPos) {
-	  var unit = eval('new '+unitPos.type+'(game,'+unitPos.row+','+unitPos.col+')');
-	  units.push(unit);
-    });
-    return units;
-  }
-  this.units = initUnits();
-}
-
-function KnightUnit(game, row, col) {
-  /* constant properties */
-  this.name = 'Knight';
-  this.maxHealth = 50;
-  this.power = 22;
-  this.armor = 25;
-  this.movement = 3;
-  this.maxWait = 1;
-  this.attacks = null;
-  this.attackPattern = null;
-  this.attackBlockable = true;
-  this.blocking = 80;
-  this.stepsAside = false;
-  this.teleport = false;
-  this.size = 1;
+function TacticsUnit() {
 
   /* gameplay properties */
   this.alive = true;
-  this.health = this.maxHealth;
+  this.health = 0;
   this.blockingMod = 0;
   this.wait = 0;
   this.direction = DIR_RIGHT;
   this.isFocused = false;
   this.isParalyzed = false;
-  this.row = row;
-  this.col = col;
 
   /* game management */
-  this.game = game;
-  this.board = game.board;
-  this.owner = 'adu';
   this.element = null;
   this.tile = null;
 
