@@ -1,12 +1,13 @@
 function TacticsPlayer(game, preferences) {
   /* game management */
+  this.game = game;
   this.board = game.board;
   this.currentTurn = false;	
 
   /* player profile */
   this.id = preferences.id;
   this.username = preferences.username;
-  this.formation = new Formation(game, preferences.formation);
+  this.formation = new Formation(this, preferences.formation);
   this.color = preferences.color;
 
   /* stats */

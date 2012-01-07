@@ -2,6 +2,9 @@
  * constants and paramenters
  */
 
+/* path names */
+var PUBLIC = '../';
+
 /* turn phases */
 var TURN_MOVE = 1;
 var TURN_ATTACK = 2;
@@ -39,7 +42,7 @@ var aduPlayer = { // will be loaded via JSON later
   ties: 1,
   formation: [
     {type: 'KnightUnit', row: 1, col: 1},
-    {type: 'KnightUnit', row: 6, col: 5},
+    {type: 'AssassinUnit', row: 6, col: 5},
     {type: 'KnightUnit', row: 6, col: 6}
   ],
   color: UNIT_GREEN

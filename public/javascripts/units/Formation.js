@@ -13,14 +13,15 @@ BW -> Obelisk of Sanctuary
 BR -> Avii, Horror of Longinus
 */
 
-function Formation(game, unitList) {
+function Formation(player, unitList) {
+  this.player = player;
   this.units = null;
   
   /* init methods */
   var initUnits = function() {
 	var units = new Array();
     $.each(unitList, function(i, unitPos) {
-	  var unit = eval('new '+unitPos.type+'(game,'+unitPos.row+','+unitPos.col+')');
+	  var unit = eval('new '+unitPos.type+'(player,'+unitPos.row+','+unitPos.col+')');
 	  units.push(unit);
     });
     return units;

@@ -1,12 +1,12 @@
-function KnightUnit(player, row, col) {
+function AssassinUnit(player, row, col) {
   /* constant properties */
-  this.name            = 'Knight';
-  this.maxHealth       = 50;
-  this.power           = 22;
-  this.armor           = 25;
-  this.movement        = 3;
+  this.name            = 'Assassin';
+  this.maxHealth       = 35;
+  this.power           = 18;
+  this.armor           = 12;
+  this.movement        = 4;
   this.maxWait         = 1;
-  this.blocking        = 80;
+  this.blocking        = 70;
   this.attacks         = [ { row: -1, col:  0 }, { row:  0, col:  1 },
                            { row:  1, col:  0 }, { row:  0, col: -1 } ];
   this.attackPattern   = [ { row:  0, col:  0 } ];
